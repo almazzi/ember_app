@@ -1,0 +1,13 @@
+<p style="background-color: #219161">blogs/list.hbs</p>
+<h1>List</h1>
+{{#each model as |blog|}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+
+            <h3 class="panel-title">{{blog.name}}</h3>
+
+            {{#link-to "blog" blog}}{{blog.name}}{{/link-to}}
+        </div>
+    </div>
+{{/each}}
+
